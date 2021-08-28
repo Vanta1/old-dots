@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="background-color"></div>
+		<div class="link-container">
+			<a href="https://www.reddit.com">reddit</a><br/>
+			<a href="https://www.twitter.com">twitter</a><br/>
+			<a href="https://www.youtube.com">youtube</a><br/>
+			<a href="https://www.github.com">github</a><br/>
+		</div>
+		<div id="time-container">
+			<script>
+				var d = new Date();
+				var m = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+				var g = d.getDate().toString();
+				switch (g.slice(-1)) {
+					case "1" :
+						g += "st";
+						break;
+					case "2" :
+						g += "nd";
+						break;
+					case "3" :
+						g += "rd";
+						break;
+					case "4" :
+						g += "th";
+						break;
+					case "5" :
+						g += "th";
+						break;
+					case "6" :
+						g += "th";
+						break;
+					case "7" :
+						g += "th";
+						break;
+					case "8" :
+						g += "th";
+						break;
+					case "9" :
+						g += "th";
+						break;
+					case "0" :
+						g += "th";
+						break;
+				}	
+				var t = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+				document.getElementById("time-container").innerHTML = d.getFullYear() + "<br/>" + m[d.getMonth()] + "<br/>" +  t[d.getDay()] + "<br/>" + g;
+			</script>
+		</div>
+	</body>
+</html>
